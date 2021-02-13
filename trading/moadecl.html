@@ -2880,8 +2880,7 @@ Fine del ciclo di vita del vecchio browser Internet Explorer
     //DOM SELECTION:
     var IEModalWarning = document.querySelector(".warnigModal");
     var IEHelperBTN = document.querySelector(".safariHelper");
-    var UserAG = window.navigator.userAgent;
-    console.log("The User Agent is: ", UserAG);
+    var UserAG = window.navigator.userAgent;   
     var isMSIE = /MSIE|Trident/.test(UserAG);
 
 
@@ -2889,6 +2888,7 @@ Fine del ciclo di vita del vecchio browser Internet Explorer
         //TESTING:
         var isIE = false;
         var ua = window.navigator.userAgent;
+         console.log("The User Agent is: ", ua);
         var old_ie = ua.indexOf('MSIE ');
         var new_ie = ua.indexOf('Trident/');
 
@@ -2910,7 +2910,6 @@ Fine del ciclo di vita del vecchio browser Internet Explorer
     IEHelperBTN.addEventListener('click', function (e) {
         IEModalWarning.style.display = "none"
     });
-    console.log("what browser: ", isIE)
 
 </script>
 
