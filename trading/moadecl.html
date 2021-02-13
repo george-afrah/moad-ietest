@@ -2902,9 +2902,9 @@ Fine del ciclo di vita del vecchio browser Internet Explorer
             console.log("YOU ARE USING INTERNET EXPLORER, NOT GOOD!");
         }
     }//handleIE
-    window.addEventListener('DOMContentLoaded'){
-        handleIE();
-    }
+    window.addEventListener('DOMContentLoaded', function(){
+            handleIE();
+        });
 
     //close the modal box:
     IEHelperBTN.addEventListener('click', function (e) {
