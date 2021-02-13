@@ -626,7 +626,7 @@ const createRequest = function (){
 		return responseMethod(httpRequest);
 
 	});  //  ../include/prefissi.json
-	httpRequest.open('GET', "../_include/prefissi.json", true);
+	httpRequest.open('GET', "../include/prefissi.json", true);
 	httpRequest.send();
 }
 
