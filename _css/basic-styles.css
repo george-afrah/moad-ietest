@@ -1,0 +1,1514 @@
+ :root{
+    --success-color: #2ecc71;
+    --error-color: #f07821;
+}
+html {
+  scroll-behavior: smooth;
+}
+ 
+ body {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    background-color: #f6f6f6;
+    padding-top: 100px;
+    padding-bottom: 108px;
+     position: relative;
+} 
+h1, h2, h3, h4, h5, h6, .mobile-claim {
+    
+    color: #044d9a;
+}
+h1 {
+    font-size: 2.5rem;
+    padding-top: 0.5em;
+}
+
+/*== xxL Special Margin off  Begin === */  
+@media screen and (min-width: 1914px){
+    .claimtext.col-md-7 {
+        margin-left: 3em;
+    } 
+}/*== xxL Special Margin off  END === */
+/**
+* Style speciale per la pagina riepilogo dati cliente>
+*/
+#riepologo_cliente{   
+ margin-bottom: 1.5rem!important;  
+  margin-top: .5rem!important;  
+}
+.claim{
+    height: 52px;    
+    width: 652px; 
+    padding-top: .8rem !important;
+    padding-right: 4rem;
+    margin-left: 0rem !important;       
+    }
+.desktop-Brand-logo {
+height: 52px;
+    width: 250px;    
+    margin-right: 2.5em;
+    margin-left: 1rem;
+    padding-left: 1rem
+}
+.LogoDiv {
+margin-right: 9rem!important;
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    margin-right: 0rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+.mobileClaim{
+height: auto;
+width: 75%;
+padding-top: .5rem !important;
+margin-right: 1rem !important;
+margin-left: 5rem;
+}
+/*==== Firef ox ourter Hack Start=======*/
+@-moz-document url-prefix() {  
+    .mobileClaim {
+        height: auto;
+        width: 46vw;
+        padding-top: .5rem !important;
+        margin-right: 1rem !important;
+        margin-left: 5rem;
+    }}
+/*=====Fire Fox ourter Hack  END ============*/
+
+.mobile-Brand-logo{  
+    margin-right: 0rem;
+    height: 38px;
+    width: 115px;   
+}
+.navbar-toggler{
+margin-top: .15rem;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    padding-top: 1px;
+    width: 1.5em;
+    height: 1.9em;
+    content: "";
+    background: no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;     
+    }
+/*=== Sesso Radio Styles=*/
+.FemminaMaschio{    
+        padding-top: .38rem!important;   
+        margin-left: .5rem!important;
+        margin-bottom: .25rem!important;
+       }
+.FemminaMaschiRadio{
+    position: absolute;
+    top: .65rem;
+    left: 0;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+}
+    
+/*============== Media Query >> topMobile-main-nav && Header START > ====== */
+/*Large Viewports*/
+@media screen and  (max-width: 1196px){
+    .LogoDiv {
+        margin-right: 0rem!important;
+    }
+                    /*====== firefox hack ==========*/
+                    @-moz-document url-prefix() { 
+                        .mobileClaim {                            
+                            height: auto;
+                            width: 46vw;
+                            padding-right: 2rem;
+                            padding-top: .5rem !important;
+                            margin-right: 1rem !important;
+                            margin-left: 6rem;
+                        }}
+                        @-moz-document url-prefix() { 
+                        .mobileclaim-text{
+                            margin-right: 8rem!important;
+                            padding-top: .25em;                           
+                            
+                        }}
+                        @-moz-document url-prefix() { 
+                        .mobile-Brand-logo{  
+                            margin-right: 0rem;
+                            height: auto;
+                            width:18vw;                        
+                                
+                        }}
+                    /*====== '''''' FF INNER hack ''''''/END ==========*/
+}/* ================ END Media Q (1196px) ===============*/
+
+@media screen and  (max-width: 990px){
+    .mobileclaim-text{
+        margin-right: 12rem!important;
+        padding-top: .25em;  
+    }
+     /*====== firefox hack ==========*/
+        @-moz-document url-prefix() { 
+            .mobile-Brand-logo{  
+                margin-right: 0rem;
+                height: auto;
+                width:18vw;                                           
+            }}
+        @-moz-document url-prefix() { 
+            .mobile-Brand-logo{  
+                margin-right: 0rem;
+                height: auto;
+                width:18vw;                 
+                
+            }}
+
+        @-moz-document url-prefix() {                 
+                .mobileclaim-text{
+                /*  margin-right: 8rem!important; */
+                padding-top: .25em;                   
+                width: 56vw;                   
+                margin-right: 0rem !important;                        
+
+            }}
+        @-moz-document url-prefix() {  
+                .mobileClaim {
+                    height: auto;
+                    width: 49vw;
+                    padding-top: .5rem !important;
+                    margin-right: 1rem !important;
+                    margin-top: .3rem;
+                    margin-left: 0rem;
+                }}
+
+    /*====== '''''' FF INNER hack ''''''/END ==========*/ 
+
+}/*================ END Media Q(990px) ===============*/
+
+
+/*Medium Viewports*/
+@media screen and  (max-width: 768px){
+/*                         .mobileclaim-text{
+                            margin-right: 8rem!important;
+                            padding-top: .25em;
+                            min-width: 40%;   
+                        } */
+.mobileclaim-text{ 
+    padding-top: .25em;              
+    width: 56vw;                   
+    margin-right: 0rem !important; 
+}
+
+
+                    /*  .mobileClaim{
+                        padding-top: .7rem!important;
+                        margin-left: 1px;
+                        padding-right: 2rem;
+                        height: auto;
+                        width:100%;
+                        } */
+.mobileClaim {
+    height: auto;
+    width: 49vw;
+    padding-top: .5rem !important;
+    margin-right: 1rem !important;
+    margin-top: .3rem !important;
+    margin-left: 0rem;
+}
+
+
+.mobile-Brand-logo{  
+    margin-right: 0rem;
+    height: auto;
+   /*  width:45%;  */
+    width: 20vw;    
+}
+.mobileBrand, .navbar-brand{
+    margin-right: 2px;
+}
+.navbar-toggler-icon {
+    display: inline-block;
+    padding-top: 1px;
+    width: 1.5em;
+    height: 1.9em;
+    content: "";
+    background: no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;     
+    }
+     /*====== firefox hack ==========*/
+        @-moz-document url-prefix() { 
+            .mobile-Brand-logo{  
+                margin-right: 0rem;
+                height: auto;                               
+                width: 20vw;    
+            }}
+        @-moz-document url-prefix() {                 
+                .mobileclaim-text{ 
+                padding-top: .25em;              
+                width: 56vw;                   
+                margin-right: 0rem !important;                           
+                
+                
+            }}
+    @-moz-document url-prefix() {  
+            .mobileClaim {
+                height: auto;
+                width: 49vw;
+                padding-top: .5rem !important;
+                margin-right: 1rem !important;
+                margin-top: .3rem !important;
+                margin-left: 0rem;
+            }}
+
+/*====== '''''' FF INNER hack ''''''/END ==========*/ 
+
+}/* =============== END Media Q ( 768px) =========================*/
+
+/*Small Viewports*/
+@media screen and  (max-width: 576px){
+
+
+                                    /*     .mobileclaim-text{  
+                                            margin-right: 2rem!important;
+                                            padding-top: .25em;
+                                            min-width: 45%;  
+                                        }
+                                        .mobileClaim{
+                                        padding-top: .4rem!important;
+                                        padding-right: 2rem;
+                                        height: auto;
+                                        width:120%;
+                                        }
+                                        .mobile-Brand-logo{
+                                            height: auto;
+                                            width:68%; 
+                                            margin-right: 0rem;
+                                        }*/
+
+    .mobile-Brand-logo{         
+        margin-right: 0rem;
+        height: 6vh;                             
+        width: 22vw; 
+        margin-top: .20rem;           
+    }
+                
+        .mobileclaim-text{ 
+        /* padding-top: .25em; */              
+        width: 56vw; 
+        margin-top: .25rem;                  
+        margin-right: 0rem !important;                         
+          
+    }
+    .mobileClaim {
+        height: auto;
+        width: 54vw;        
+        padding-top: .5rem !important;
+        margin-right: .2rem !important;
+        margin-top: .3rem !important;
+       /*  margin-left: 1.2rem; */
+    }
+    .navbar-toggler {
+   margin-top: .18rem;
+    padding: .29rem .90rem .25rem
+    }
+/*== new header styles END ==*/
+
+
+mobileBrand, .navbar-brand{
+        margin-right: 2px;
+    } 
+.navbar-toggler-icon {
+padding-right: 2.6rem!important;    
+display: inline-block;
+width: 1.5em;
+height: 1.8em;
+content: "";
+background: no-repeat center center;
+-webkit-background-size: 100% 100%;
+background-size: 100% 100%;     
+}
+/*====== firefox hack ==========*/
+@-moz-document url-prefix() { 
+    .mobile-Brand-logo{         
+        margin-right: 0rem;
+        height: 6vh;                             
+        width: 22vw; 
+        margin-top: .20rem;     
+       
+    }}
+@-moz-document url-prefix() {                 
+        .mobileclaim-text{ 
+        padding-top: .25em;              
+        width: 56vw;                   
+        margin-right: 0rem !important;                           
+        
+        
+    }}
+@-moz-document url-prefix() {  
+    .mobileClaim {
+        height: auto;
+        width: 54vw;        
+        padding-top: .5rem !important;
+        margin-right: .2rem !important;
+        margin-top: .3rem !important;
+        margin-left: 1.2rem;
+    }}
+/*====== '''''' FF INNER hack ''''''/END ==========*/ 
+}/* ======= END Media Q (576px) ====================*/
+
+
+/*============== < Form buttons Styels START > ====== */
+/* torna su bnt */
+.btn-arrow-up a {
+    color: #ffffff !important;
+    text-decoration: none;
+   }
+   #form-btns button:hover,  
+   #form-btns a:hover{  
+    color: #fff;
+    background-color: #19a2f1;
+    border-color: #19a2f1; 
+    cursor: pointer;   
+ }
+ 
+ #form-btns button,  
+ .btn-arrow-up {  
+    color: #fff;
+    background-color: #044d9a;
+    border-color: #044d9a;
+}
+#BOTT1 .fa.fa-arrow-circle-right{
+     margin-left: .8rem;
+}
+
+/*============== < Form buttons Media Query> --START ====== */
+/* == Medium devices (tablets, 768px and up)  ==*/
+@media screen and  (max-width: 768px) {
+    #form-btns{  
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+     }
+     #form-btns .btn-1{  
+        margin-bottom: 16px;
+     }
+
+}/*END Media Q*/
+
+/*============== < /Form buttons Styels > -- END-^====== */
+
+.phone:before {
+    content: "\f098";
+    font-family: FontAwesome; 
+    font-size: 1.2em;    
+    margin-left: 0.5em;
+    color:#0e5db3;
+}
+ 
+
+.lista{
+    list-style-type: none;
+    padding-left:.5rem; 
+    
+    }
+.options a{
+text-decoration: none;
+}
+.fa-circle-thin:before {
+    content: "\f1db";
+    color: #7c7f86;
+}
+
+legend{
+    color: #044d9a;
+}
+.noteBold{
+font-weight: bold;
+font-family: 'Ubuntu', sans-serif;
+color: #044d9a;
+}
+
+.NoteImportanti{
+font-family: 'Ubuntu', sans-serif;
+color: #044d9a;
+}
+.questionario{
+    font-size: 1.5rem;
+}
+.domicilioDiverso-div{
+    color: #044d9a;
+}
+.domicilioDiverso.NoteImportanti {
+    margin-left: 3rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(4, 77, 154);
+}
+/* ============= < Top Banner Styles  > --START ================ */
+.sticky-top {
+    height:68px;
+    position: -webkit-sticky;
+    position: fixed;
+    top: 0;
+    z-index: 1020;   
+    background-color: white;
+    box-shadow: 0px 4px 1px rgb(238, 234, 234);
+}
+.topNav-mobile{
+background-color: white;
+box-shadow: 0px 4px 1px #e0dddd;
+}
+/*======================================== 
+*<< Button customization styles  >> -- 
+ ========================================== START*/
+.btn-info.modal-btn { 
+    color: #fff;
+    background-color:#044d9a;
+    border-color: #044d9a;            
+        } 
+.btn-primary.Domi-diverso{
+    color: #fff;
+    background-color: #044d9a;
+    border-color: #044d9a;
+    }      
+    
+.btn-info.modal-btn:hover {
+color: #fff;
+background-color: #19a2f1;
+border-color: #19a2f1;
+}
+/*=== Hamburger menu styles*/
+.navbar-light .navbar-toggler {
+    border-color: rgb(135, 172, 212);
+    color: rgb(4, 77, 154);
+}
+/*======================================== 
+*<< Button customization styles  >> -- 
+ ========================================== /END*/
+.leftNavFixed{
+    position: fixed;
+    top:116px;
+    left:5;
+}
+.rightNavFixed{
+    position: fixed;
+    top:116px;
+    right:7;
+    padding-right:.5rem;
+}  
+/*== Help docs Help list Styles ==*/
+.fa-check-square-o:before {
+content: "\f046";
+color: rgb(4, 77, 154);
+font-weight: bold;
+}
+
+.boxDx-1.card{
+    color: black;
+    height: 250px;
+    background-color: rgb(236, 233, 233);    
+    }
+    .activeBannersBoxDx, .boxDx-1.card, .boxDx-2.card, .boxDx-3.card{
+    height: 250px;
+    background-color: #e0e0e0;
+    color: #181616;    
+    }
+    .boxDx-2.card ul{
+        list-style-type: none;
+    }
+/*boxDx-2 new style --start*/  
+li.restyled-list-item a:link {
+color:#044d9a;
+text-decoration: none; 
+}  
+li.restyled-list-item2{
+margin-top:.8rem;
+}    
+li.restyled-list-item img.new-help-icons{
+transition: 1s;       
+}
+li.restyled-list-item a:hover img.new-help-icons{
+transform:scale(1.6,1.6);
+}
+/*boxDx-2 new style --end*/
+
+    .DynamicBoxDx-2{
+        height: 250px;
+        background-color: #e0e0e0;
+        color: #181616; 
+    }
+    .DynamicBoxDx-2 p{      
+        color: #2c2e3f; 
+        font-size: .8em;
+        margin-bottom: 0px;
+    }
+    .slick-slider img{
+        height: 224px;
+        width: 392px;
+    }
+/*rule for Rosarybeads-list [display: inline-block]*/
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-right-radius: .25rem;
+    border-top-left-radius: .25rem;
+    font-size: .8em;
+}
+.nav-link {
+    display: inline-block;
+    padding: .25em 1em;
+}
+/* ========== < Top Banner Styles  > -- END -^===================== */
+
+/* ====== < Fontawesome custom styels  > -- START ->>================ */
+.fa-stack { 
+    position: relative;
+    display: inline-block;
+    width: 2.6rem;
+    height: 2.6rem;
+    line-height: 1.9em;
+    vertical-align: middle;
+}
+.fa-stack-2x {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  /*   font-size: 2rem;  */
+    font-size: 2.5rem;  
+}
+.fa-stack-1x {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-weight:normal;
+    padding-top: 5px;
+    line-height: normal;
+    font-size: 1.5rem;
+    /* font-weight: bolder; */
+}
+
+/* ======= < Fontawesome custom styels  > -- //END -^================ */
+
+/**** ============= < Site Wide Media Queries  > -- START======== */
+/* == Small devices (BN: from => landscape phones, 576px and Downwards )  */
+@media screen and  (max-width: 576px){
+    body { 
+        padding-top: 100px;
+    
+         }
+    .topNav-mobile{
+        padding: .25rem;
+    }
+    .btn-info.modal-btn {       
+        display: block; 
+        flex:1;
+        margin: 0  .5rem 2rem .5rem;     
+        color: #fff;
+        background-color: #044d9a;
+        border-color: #044d9a;       
+        
+    }  
+
+}/*END Media Q*/
+
+/* == Small devices (landscape phones, 576px and up)  ==*/
+@media screen and  (min-width: 576px){
+    body { 
+        padding-top: 100px;     
+      
+         }
+ /*  .nav{
+     background-color: violet;
+    overflow-y:scroll !important;
+    } */
+}/*END Media Q*/
+
+
+/* == Medium devices (tablets, 768px and up)  ==*/
+@media screen and  (min-width: 768px) {
+    body{ 
+        padding-top: 100px;
+       
+     }
+}/*END Media Q*/
+/*==  Large devices (desktops, 992px and up)  ==*/
+@media screen and (min-width: 992px) {
+   body {
+    padding-top: 68px;
+      
+    }  
+}/*END Media Q*/
+/*  == Extra large devices (large desktops, 1200px and up)   ==*/ 
+@media screen and (min-width: 1200px) {
+   body {
+ 
+        padding-top: 100px;
+    } 
+ }/*END Media Q*/
+/**** ============= < /SideWide Media Queries  > rgb(4, 77, 154);  --END--^======== */
+
+/* =============== <  General menu hovers && active  classes-- START > ========= */
+.main_nav li a:hover  {
+    padding: 5px 5px;     
+    border-left: 0px solid rgb(253, 254, 255);
+    background: rgb(4, 77, 154) !important; 
+    color:white;
+    text-decoration: none;
+    }
+.nav-tabs .nav-link.active{
+    padding: 5px 5px;    
+    width: 220px !important;
+    border-left: 0px solid rgb(253, 254, 255);
+    background: rgb(4, 77, 154) !important; 
+    color:white !important; 
+    text-decoration: none;    
+    } 
+.nav-tabs .nav-link.active:before{
+    content: "\f138";
+    font-family: FontAwesome;   
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    font-size: 1.2em;
+    padding-right: 0.5em;   
+}
+.nav-tabs .nav-link:hover{
+background: rgb(4, 77, 154) !important; 
+color:white !important; 
+text-decoration: none;  
+}
+
+/* =============== < Mobile mini navbar-light .active && highlight classes -- START > ========= */
+.navbar-light .navbar-nav .nav-link.active{
+    padding: 5px 5px;    
+    width: 253px !important;
+    border-left: 0px solid rgb(253, 254, 255);
+    background: rgb(4, 77, 154) !important; 
+    color:white !important; 
+    text-decoration: none; 
+    }
+    .navbar-light .navbar-nav .nav-link.active:before {
+        content: "\f138";
+        font-family: FontAwesome;   
+        text-decoration: inherit;
+    /*--adjust as necessary--*/
+        font-size: 1.2em;
+        padding-right: 0.5em; 
+    }
+.navbar-light .navbar-nav .nav-item.nav-link:hover{
+    background-color: rgb(4, 77, 154) !important; 
+    color:white !important; 
+    text-decoration: none; 
+}
+ /* =============== < /Mobile mini navbar-light .active  && highlight classes -- END > ========= */
+
+/** ======== <  GENERAL foooter styles > --START===================*/
+.footer{
+    color:#044d9a;
+    list-style-type: none;
+    background-color:white;
+    height: 48px;
+    border-top: 1px solid gray;
+
+}
+.footer a{
+    color:#044d9a;    
+
+}
+.support ul li, .socials{
+    list-style-type: none;
+        }
+.socials .fa{
+    list-style-type: none;
+    font-family: FontAwesome;
+    font-size: 1.4rem;
+    color:#044d9a;
+
+        }
+.socials .fa:active,
+.socials .fa:hover{
+    padding: 0.22rem;
+    color: #044d9a;
+        }
+
+.address p{
+    font-weight: 500;
+    font-size: .7rem;
+    margin-bottom: .25rem;
+}
+/*=========Micro footer Media Queries -- END==============*/
+/*== *** SPECIAL Large devices {{- (desktops, 1240px and down)- }} /=>>> START*/
+@media screen and (max-width: 1240px) {
+    .domicilioDiverso.NoteImportanti {
+        margin-left: 0rem;
+        font-family: 'Ubuntu', sans-serif;
+        color: #044d9a;
+    }
+}/*END Media Q*/
+
+/*== *** SPECIAL  Codiceabbinamento {{- (desktops, 1240px and down)- }} /=>>> START*/
+@media screen and (min-width: 1334px) {
+    .codAbbinamentoDiv{
+        margin-top: .5rem!important; 
+        color: #044d9a
+    } 
+    .codAbbinamentoDiv strong{
+    padding-right: .5em;
+    }
+    .AbbinamentoBox {
+    padding-left: 3px;
+    margin-top: 1.5rem!important;
+    color: #044d9a;
+    }
+}/*END Media Q*/
+
+@media screen and (max-width: 1329px) {
+    .codAbbinamentoDiv{
+        margin-right: .5rem!important;
+        min-width: 350px; 
+        color: #044d9a
+    } 
+    .codAbbinamentoDiv strong{
+        padding-right: 5.5em;
+        }
+ 
+}/*END Media Q*/
+
+/*==  Large devices (desktops, 992px and down)  ==*/
+@media screen and (max-width: 992px) {
+    .all_Socials  ul, .address{
+        display: flex;          
+        justify-content: center !important;
+
+        }
+
+.all_Socials  ul li, .address p{       
+         flex:1;    
+        justify-content: center;
+        }
+.all_Socials  ul li{
+    margin-top: .5rem ;
+    margin-bottom: 1rem ;
+}
+.support ul li, .address p{
+    font-size: .7rem;
+    margin-bottom: .25rem;
+} 
+.domicilioDiverso.NoteImportanti {
+    margin-left: 3rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: #044d9a;
+}  
+       
+ }/*END Media Q*/
+
+/* == Medium devices (tablets, 768px and up)  ==*/
+@media screen and  (max-width: 768px) {
+    .all_Socials  ul li, .address p{
+        font-size: .6rem;
+         flex:1;    
+        justify-content: center;
+        }
+        .address p{            
+            font-size: .7rem;
+            margin-bottom: .25rem;
+        }
+
+     .all_Socials  ul li{
+        margin-top: .5rem; 
+    }
+
+    }/*END Media Q*/
+/* == Small devices (landscape phones, 576px and down)  ==*/
+@media screen and  (max-width:  576px){
+    .all_Socials  ul, .address{
+            display: flex;          
+            justify-content: center !important;
+            }
+
+.all_Socials  ul li, .address p{
+            font-size: .6rem;
+             flex:1;    
+            justify-content: center;
+            }
+            
+        .socials .fa:active,
+        .socials .fa:hover{
+            font-size: 1.2rem;
+            padding: 0.22rem;
+            color: #044d9a;
+        }
+    .socials .fa{
+        list-style-type: none;
+        font-family: FontAwesome;
+        font-size: 1.2rem;  
+           
+    }
+    .address p{
+    margin-bottom: .25rem;
+    }
+    .all_Socials  ul li{
+        margin-top: .5rem;
+        margin-bottom: 1rem;  
+    }
+
+}/*END Media Q*/
+/** ======== </GENERAL foooter styles >--END--===================*/
+
+/*==================================
+* ======= Rosarybeads STYLES --START  =========>
+==================================== */
+.Rosarybeads-list a {
+    color: #788288;
+    text-decoration: none;
+  }
+  .Rosarybeads-list li {
+    position: relative;
+  }
+  .Rosarybeads-list li span {
+    display: inline-block;
+    /* font-weight: 400; */
+    width: 1.8em;
+    height: 1.8em;
+    text-align: center;
+    line-height: 1.8em;
+    border-radius: 1em;
+    background:#bcbec0;
+     /*#bcbec0*n== new bg-color rosary menu// Old bgcolor:#7c7f86; */
+    color: black;
+    position: relative;
+}  
+  .Rosarybeads-list li::before {
+    content: '';
+    position: absolute;
+    background: #2b4096;
+    z-index: -1;
+  }  
+  .Rosarybeads-list.vertical {
+    padding: 0;
+    margin: 0;
+  }
+  .Rosarybeads-list.vertical li {
+    list-style-type: none;
+    text-align: left;
+  }
+  .Rosarybeads-list.vertical li span {
+    margin: .25em 0;
+  }
+  .Rosarybeads-list.vertical li::before {
+    top: -30px;
+    left: 13px;
+    width: 0.1em;
+    height: 3.98em;
+}
+  .Rosarybeads-list li:first-child::before {
+    display: none;
+  }
+  /* == menu hovers && active  classes == */
+  
+   .Rosarybeads-list.vertical a:hover  {
+      /* padding: 3px 4px; */     
+      border-left: 0px solid rgb(253, 254, 255);
+      background: rgb(4, 77, 154) !important; 
+      color:white;
+      text-decoration: none;
+      }
+  
+  .Rosarybeads-list.vertical :active::before {
+    background-color: lightblue;
+      z-index: -1;
+  }
+  .Rosarybeads-list.vertical :active span {
+    background:rgb(4, 77, 154);
+       z-index: 14;
+  }
+  
+  .Rosarybeads-list.vertical  :hover span {
+  background-color: rgb(4, 77, 154);
+    color:white;
+    z-index: 1;
+  }  
+  /*==================================
+  * ======= Rosarybeads STYLES --END  /==>
+  ==================================== */
+
+ /*==================================
+  * ======= << Form Error Classes  START==>>
+  ==================================== */
+  .error{
+   color: rgb(250, 165, 19);
+   font-size: 1rem; 
+   
+  }
+  .servError{
+   color: rgb(250, 165, 19);
+   font-size: 1rem; 
+   
+  }
+
+  CODICI_BLU_DIRECT{
+      color: #044d9a;
+      background-color: rgb(4, 77, 154);
+  }
+  
+/*:::::::>
+/***** thank you page special styels ==>>
+*/
+
+
+/*:::::::>
+/***** thank you page special styels END ==>>
+*/
+.thnkYou.jumbotron{   
+    margin-bottom: 2rem;
+    background-color: #f6f6f6;
+    border-radius: .3rem;
+}
+.jumbotron {
+    padding: 0rem 1rem;
+    margin-bottom:0;    
+    border-radius: .3rem;
+    
+}
+
+.display-3.grazie{
+    font-size: 4.1rem;
+    font-weight: 300;
+    line-height: 1.1;
+    padding-top: 0em;
+}
+.fa-4x.greenCheck{
+ font-size: 6em;
+color: #347d23;
+}
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #dbe0d9;
+    color: #0d0e0d;
+}
+.help-txt-1{
+    margin-top:1.5rem;
+}
+.uploader-btn{
+margin-bottom:1rem;
+}
+.Lista-Doc-inline {
+padding: .6em 2px .6em  2px; 
+background-color: #044d9a;
+color: white;  
+font-family: inherit;
+font-weight: 500;   
+font-size: 1rem;
+}
+.DocumentiValidi{
+background-color: #044d9a;
+}
+.list-inline.DocValidi{
+display:inline;
+padding: .6em;
+background-color: #044d9a;
+color:white;
+}
+.DocValidi .list-inline-item{   
+    padding: .6em;    
+    
+    }
+@media screen and  (max-width: 990px){
+    .DocValidi .list-inline-item{
+   margin-top:1em;
+    padding: .6em; 
+    
+    }
+}/*Media Q END */
+
+.fa.fa-check-circle.ListaDoc{
+color:white;
+}
+.lisDoc-p{
+font-size: 1.2rem;
+margin: .6em 0em;
+padding:0;
+}
+
+.hiddenFields{
+    position: absolute;
+    top: .25rem;
+    left: 0;
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: url("../_images/tick-box-52.png");
+    background-size: cover;   
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;   
+}
+
+/********************
+* SPID && OTP Blocks
+*/
+.OTPcontainer{
+    padding: 1rem 1rem;
+    position: relative;
+}
+.AttesaOPT{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: lightyellow;
+    padding: .2rem 4rem;
+    border-radius: .23rem; 
+    transition: display .3s ease-out;  
+    margin-bottom: unset; 
+}
+.AttesaOPT.hideIT{
+    display: none;
+}
+.AttesaOPT.showIT{
+    display: block;
+}
+.OTPcontainer.success{
+   border: 1px solid #37a803;
+   border-radius: .3rem;
+}
+.OTPcontainer.error{
+    border: 1px solid rgb(250, 165, 19);
+    border-radius: .3rem;
+ }
+.otp_para{
+   color: #292b2c
+}
+.otpInputgroup{
+    display: flex;
+    justify-content: space-evenly;
+}
+.OTPBTN{
+    padding: .35rem 1.5rem;
+    font-size: 1.25rem;
+    border-radius: .3rem;
+    color: #fff;
+    background-color: #044d9a;
+    border-color: #044d9a;
+    cursor: pointer;
+    box-shadow: inset;
+}
+.OTPBTN:hover, .OTPBTN:active{
+    background-color: #37a803;
+    border-color: #37a803;
+}
+
+/***** new verifca box *****/
+.verficaBox{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.OTPBTN:disabled{
+background-color: #e0e0e0;
+border-color: #686b6f;
+color: #bdbec0;
+cursor: unset;
+}
+.OTPBTN.verificaOTP{
+display: block;
+min-width: 71.8%;
+background-color: #e0e0e0;
+border-color: #686b6f;
+color: #bdbec0;
+cursor: unset;
+}
+.OTPBTN.verificaOTP.activated{
+color: #fff;
+background-color: #044d9a;
+border-color: #044d9a;
+cursor: pointer;
+}
+.OTPBTN.verificaOTP.activated:hover,
+.OTPBTN.verificaOTP.activated:active{
+     background-color: #37a803;
+    border-color: #37a803;
+}
+
+
+.OTPInput.form-control{
+    max-width: 200px;
+}
+
+div.small{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: rgb(250, 165, 19);
+    visibility: hidden;
+}
+.OTPcontainer.success div.small{
+    color: #37a803;
+    visibility: visible;
+}
+
+.OTPcontainer.error div.small{
+    color: rgb(250, 165, 19);
+    visibility: visible;
+}
+
+.successCheck.fa.fa-check-square-o:before{
+    color: rgb(5 154 4);
+}
+
+.successCheck.fa{
+    display: none;
+}
+.OTPcontainer.success  .successCheck.fa{
+    display: inline-block;
+}
+
+/* OTP MEDIA Queries */
+ @media screen and (max-width: 425px){
+     .OTPcontainer{
+         padding: 1rem 1rem;
+     }
+    .otpInputgroup{
+        display: flex;
+       flex-direction: column;       
+        align-content: space-between;
+        padding: .6rem .8rem;
+        margin-bottom: .3rem;
+    }
+    .reqOTP,.OTPInput{
+        margin-bottom: 1.6rem;
+    }
+    .OTPInput.form-control {
+        max-width: unset;
+        padding: .8rem .75rem;
+    }
+    .verficaBox{
+        margin-top: unset;
+    }
+    .OTPBTN.verificaOTP{
+        min-width: 100%
+    }
+ }
+
+
+
+
+
+/********************
+* SPID  Block
+*/
+.spidContainer{
+    margin: 2rem .4rem;
+    margin-left: 0rem;
+    border-left: 1px solid rgba(0,0,0,.2);
+    padding: 1rem;
+    box-shadow: 0 0 4px rgba(0,0,0,.2);
+    border-radius: .25rem;
+}
+.SPIDRadio_Box{
+    margin-left: 2rem;
+}
+.spid_para{
+font-weight: bold;
+}
+/***** special SPID Error P tag***/
+.spidErrLabel{
+    display: none;
+    color: rgb(250, 165, 19);
+}
+.spidErrLabel.has-warning{
+display: block;
+}
+/********************
+* SPID2  Block
+*/
+.spidContainer2{
+    margin: 2rem .4rem;
+    margin-left: 0rem;
+    border-left: 1px solid rgba(0,0,0,.2);
+    padding: 1rem;
+    box-shadow: 0 0 4px rgba(0,0,0,.2);
+    border-radius: .25rem;
+    display: none;
+}
+.spid_para2{
+    border-left: 4px solid #ecec08;
+    padding-left: 8px;
+}
+/********************
+* Prefisso & Telefono validation  Block
+*/
+.form-controll{
+    margin-bottom: .8rem;
+    padding-bottom: .2rem;
+    position: relative;
+}
+.form-controll label{
+    display: block;
+    margin-bottom: .5rem;
+}
+.form-controll input{    
+display: block;
+border: .2rem solid #f0f0f0;
+border-radius: 6px;
+width: 100%;
+padding: .375rem .75rem;
+}
+.user-success,
+#TELDO{
+    background-color: #fff !important;
+}
+.form-controll input:focus{
+    outline: 0;
+    border-color: #777777;
+}
+/* DIVENTA CLINETE && PREFISSO BOX SPECIALS */
+.phone_validation_container{
+    display: flex;
+    justify-content: space-between;
+}
+.prefissoContainer{
+flex-basis: 40%;
+position: relative;
+}
+.prfisso_select{
+width: 92%;
+display: block;
+font-family: "Roboto", sans-serif;
+color: #212529;;
+padding: 1rem;
+padding: .375rem .75rem;
+border: .2rem solid #f0f0f0;
+border-radius: .4rem;
+max-width: 100%;
+box-sizing: border-box;
+margin: 0; 
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');   
+  background-repeat: no-repeat, repeat;  
+  background-position: right .7em top 50%, 0 0;
+  /* icon size, then gradient */
+  background-size: .65em auto, 100%;
+  transition: all .2s ease-in;
+ /*  overflow: scroll; */
+}
+
+ 
+.NCellulare{
+flex-basis: 60%;
+}
+
+.prfisso_select:focus{
+    outline: 0;
+    border-color: #777777;
+}
+
+/*****
+* ERROR HANDLING
+**/
+.cellphone_group{
+    position: relative;
+    /* margin-bottom: 2rem; */
+}
+.cellphone_group > small{
+    color:  var(--error-color);
+  /*   position: absolute; */
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+.cellphone_group.error > small{
+visibility: visible;
+visibility: visible;
+margin-left: 19px;
+font-size: 1rem;
+}
+.cellphone_group.error .prfisso_select,
+.cellphone_group.error .TELDO{
+border-color: var(--error-color);
+}
+.cellphone_group.success .prfisso_select,
+.cellphone_group.success .TELDO{
+border-color: var(--success-color);
+}
+
+/* Handle Stato OTP */
+.StatoOTPDiv{
+    max-width: 1px;
+    max-height: 1px;    
+}
+.StatoOTPDiv label{
+font-size: 1px;
+visibility: hidden;
+}
+#StatoOTP{
+max-width: 4px;
+max-height: 4px;
+background: #f6f6f6;
+border: 1px solid #f6f6f6;
+}
+.StatoOTPDiv input:focus{
+    background-color: #f6f6f6 !important;
+    border: 1px solid #f6f6f6 !important;
+     outline: 0;
+    border-color: #fff;
+}
+
+/****** Media Queries *******/
+@media screen and (max-width: 425px){
+.phone_validation_container{
+    flex-direction: column;
+}
+.prefissoContainer {
+    flex-basis: 100%;
+    position: relative;
+    margin-bottom: .02rem;
+    padding-bottom: 1rem;
+}
+.prfisso_select {
+    width: 100%;
+}
+.trattDatiPersonali_a {
+    max-width: 95%;   
+}
+.AttesaOPT{
+    margin-bottom: 1rem;
+}
+}
+
+
+
+
+
+/*** // MODAL Warning STYLES ********/
+
+/*/ IPO: older safari browser user warning styles */
+.form_body{
+    position: relative;
+}
+.safari_helper.warnigModal{
+ /*    width: 100vw;
+    height: 100vh; */
+    z-index: 3000;
+    background-color: rgba(0,0,0, .4);
+display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.safariWarnig_container{
+    text-align: center;
+    padding: 1.4rem 1rem;
+    z-index: 1006;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.warning_title{
+    color: #222325;
+}
+.warning_txt{
+    font-weight: 700;
+    margin-bottom: .1rem;
+}
+.close.safariHelper{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.ImChrome{
+font-weight: 800;
+font-size: 1.6rem;
+color: rgb(0, 192, 0);
+}
+.goTherePara{
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+.IEWarningBox{
+    max-width: 736px;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+.alertBox{
+    margin-bottom: 3rem;
+    padding: 1.2rem;
+    border: 1px solid #f10c0c;
+    border-radius: .3rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    position: relative;
+    padding-left: 2.6rem;
+}
+.alertBox::before{
+    font-family: "FontAwesome";
+    content: "\f071";
+    display: inline-block;
+    vertical-align: middle;
+    /* font-weight: 900; */
+    color: #f10c0c;
+    position: absolute;
+    top: 0.6rem;
+    left: 0.8rem; 
+    font-size: 2rem;
+    z-index: 2;
+}
+
+
+.IEMoreIFBox{
+    padding: 1.2rem;
+    border-left: 2px solid #ecb20a;
+    padding-left: .2rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+}
+.minheader{
+
+}
+.IEpara{
+
+}
+
+
+@media screen and (max-width: 425px){
+    .close.safariHelper {
+        margin-top: 1rem;
+    }
+    .warning_title {
+        padding-bottom: 1rem;
+    }
+    .warning_txt {
+        font-weight: 700;
+        padding-top: 2rem;
+        display: block;
+    }
+}
+
+  /*
+ * Authored by George Afrah
+ */  
+/* ======== Official Color Palette @directa.it =====   */
+/* CODICI BLU DIRECTA {{"came via : email Hylda"}}:
+* rgb(37, 74, 116)
+* #254A74
+********************************
+**************************END
+
+
