@@ -156,6 +156,8 @@ window.addEventListener('DOMContentLoaded',function(e) {
     prefixInitialTXTHandleer();  
     //Handle Domicilio Diverso UI
     DomicilDiversoHandler()
+    //STOP IE user From opening MOAD Form:
+    handleIE();
 });//WINDOW EVENT
 function prefixInitialTXTHandleer() {
     let selectOptionTXT = prefissoSelect.options[prefissoSelect.selectedIndex];
@@ -721,12 +723,12 @@ if ((old_ie > -1) || (new_ie > -1)) {
     alert("OPPS, IT IE! found one!");
 }
 
-
-
 var isMSIE = /MSIE|Trident/.test(UserAG);
-if(isIE){
-    IEModalWarning.style.display = "block"
-console.log("YOU ARE USING INTERNET EXPLORER, NOT GOOD!");
+var handleIE = function () {
+    if(isIE){
+        IEModalWarning.style.display = "block"
+    console.log("YOU ARE USING INTERNET EXPLORER, NOT GOOD!");
+    }   
 }
 //close the modal box:
 IEHelperBTN.addEventListener('click', function(e){
