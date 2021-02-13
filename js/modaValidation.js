@@ -709,8 +709,21 @@ var IEHelperBTN = document.querySelector(".safariHelper");
 var UserAG = window.navigator.userAgent;
 console.log("The User Agent is: ", UserAG);
 
+//TESTING:
+var isIE = false;
+var ua = window.navigator.userAgent;
+var old_ie = ua.indexOf('MSIE ');
+var new_ie = ua.indexOf('Trident/');
+
+if ((old_ie > -1) || (new_ie > -1)) {
+    isIE = true;
+    console.log("OPPS, IT IE! found one!");
+}
+
+
+
 var isMSIE = /MSIE|Trident/.test(UserAG);
-if(isMSIE){
+if(isIE){
     IEModalWarning.style.display = "block"
 console.log("YOU ARE USING INTERNET EXPLORER, NOT GOOD!");
 }
@@ -718,4 +731,4 @@ console.log("YOU ARE USING INTERNET EXPLORER, NOT GOOD!");
 IEHelperBTN.addEventListener('click', function(e){
     IEModalWarning.style.display = "none"
 });
-console.log("what browser: ", isMSIE)
+console.log("what browser: ", isIE)
