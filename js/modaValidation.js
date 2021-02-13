@@ -704,13 +704,12 @@ domicilioDiversoToggler.addEventListener("click", DomicilDiversoHandler);
  * Gestione IE, Internet Explorer, all versions
  */
 //DOM SELECTION:
-const IEModalWarning = document.querySelector(".warnigModal");
-const IEHelperBTN = document.querySelector(".safariHelper");
-const UserAG = window.navigator.userAgent;
-const isMSIE = /MSIE|Trident/.test(UserAG);
-if ( isMSIE ) {
-  //IE specific code goes here
-}
+var IEModalWarning = document.querySelector(".warnigModal");
+var IEHelperBTN = document.querySelector(".safariHelper");
+var UserAG = window.navigator.userAgent;
+console.log("The User Agent is: ", UserAG);
+
+var isMSIE = /MSIE|Trident/.test(UserAG);
 if(isMSIE){
     IEModalWarning.style.display = "block"
 console.log("YOU ARE USING INTERNET EXPLORER, NOT GOOD!");
