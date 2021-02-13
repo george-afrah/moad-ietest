@@ -718,6 +718,7 @@ var new_ie = ua.indexOf('Trident/');
 if ((old_ie > -1) || (new_ie > -1)) {
     isIE = true;
     console.log("OPPS, IT IE! found one!");
+    alert("OPPS, IT IE! found one!");
 }
 
 
