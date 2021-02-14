@@ -2846,7 +2846,8 @@ minLength: 0
                 <span class="ImChrome"> Firefox,</span> 
                 <span class="ImChrome"> Edge</span> 
         <p class="goTherePara">
-            Pertanto ti invitiamo ad aprire il modulo in uno dei browser consigliati. Grazie.
+            Pertanto ti invitiamo ad aprire il
+             modulo in uno dei browser consigliati. Grazie.
         </p>
             </div>
     <div class="IEWarningBox">
@@ -2866,9 +2867,11 @@ Fine del ciclo di vita del vecchio browser Internet Explorer
             </div>
      </div>
        
-        <button type="button" class="close safariHelper" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">×</span>
-        </button>
+<!-- <button type="button" 
+class="close safariHelper" 
+data-dismiss="alert" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button> -->
     </div>
 </div><!-- Safari warnigModal BOX end -->
 
@@ -2879,15 +2882,7 @@ Fine del ciclo di vita del vecchio browser Internet Explorer
      */
     //DOM SELECTION:
     var IEModalWarning = document.querySelector(".warnigModal");
-    var IEHelperBTN = document.querySelector(".safariHelper");
-
-    var LuogNAFLD = document.getElementById("C1");
-    var PaeseNAFLD = document.getElementById("N1");
-    var DATNAFLD = document.getElementById("DATNA");
-    var CODFIFLD = document.getElementById("CODFI");
-  var primiCampi= [LuogNAFLD,PaeseNAFLD,DATNAFLD,CODFIFLD];
-  console.log("primiCampi del MOAD are: ", primiCampi);
-
+    //var IEHelperBTN = document.querySelector(".safariHelper");
     var handleIE = function () {
         var isMSIE = false;
         var UserAGNT = window.navigator.userAgent;
@@ -2906,16 +2901,7 @@ Fine del ciclo di vita del vecchio browser Internet Explorer
     }//handleIE
     window.addEventListener('DOMContentLoaded', function(){
             handleIE();
-        });
-    //IE Bloccage Enforcing Fields:
-    primiCampi.forEach( function(IEblockFLd){
-        IEblockFLd.addEventListener("change", handleIE);       
-    });
-
-    //close the modal box:
-    IEHelperBTN.addEventListener('click', function (e) {
-        IEModalWarning.style.display = "none"
-    });
+        });  
 
 </script>
 
