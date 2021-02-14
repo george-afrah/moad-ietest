@@ -2880,24 +2880,19 @@ Fine del ciclo di vita del vecchio browser Internet Explorer
     //DOM SELECTION:
     var IEModalWarning = document.querySelector(".warnigModal");
     var IEHelperBTN = document.querySelector(".safariHelper");
-    var UserAG = window.navigator.userAgent;   
-    var isMSIE = /MSIE|Trident/.test(UserAG);
-
-
+  
     var handleIE = function () {
-        //TESTING:
-        var isIE = false;
-        var ua = window.navigator.userAgent;
-         console.log("The User Agent is: ", ua);
-        var old_ie = ua.indexOf('MSIE ');
-        var new_ie = ua.indexOf('Trident/');
+        var isMSIE = false;
+        var UserAGNT = window.navigator.userAgent;
+         console.log("The User Agent is: ", UserAGNT);
+        var olderIE = UserAGNT.indexOf('MSIE ');
+        var lastIEs = UserAGNT.indexOf('Trident/');
 
-        if ((old_ie > -1) || (new_ie > -1)) {
-            isIE = true;
-            console.log("OPPS, IT IE! found one!");
-            alert("OPPS, IT IE! found one!");
+        if ((olderIE > -1) || (lastIEs > -1)) {
+            isMSIE = true;
+            console.log("OPPS, It's an IE! found one!");            
         }
-        if (isIE) {
+        if (isMSIE) {
             IEModalWarning.style.display = "block"
             console.log("YOU ARE USING INTERNET EXPLORER, NOT GOOD!");
         }
