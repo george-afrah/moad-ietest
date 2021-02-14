@@ -2880,7 +2880,14 @@ Fine del ciclo di vita del vecchio browser Internet Explorer
     //DOM SELECTION:
     var IEModalWarning = document.querySelector(".warnigModal");
     var IEHelperBTN = document.querySelector(".safariHelper");
-  
+
+    var LuogNAFLD = document.getElementById("C1");
+    var PaeseNAFLD = document.getElementById("N1");
+    var DATNAFLD = document.getElementById("DATNA");
+    var CODFIFLD = document.getElementById("CODFI");
+  var primiCampi= [LuogNAFLD,PaeseNAFLD,DATNAFLD,CODFIFLD];
+  console.log("primiCampi del MOAD are: ", primiCampi);
+
     var handleIE = function () {
         var isMSIE = false;
         var UserAGNT = window.navigator.userAgent;
@@ -2900,6 +2907,10 @@ Fine del ciclo di vita del vecchio browser Internet Explorer
     window.addEventListener('DOMContentLoaded', function(){
             handleIE();
         });
+    //IE Bloccage Enforcing Fields:
+    primiCampi.forEach( function(IEblockFLd){
+        IEblockFLd.addEventListener("change", handleIE);       
+    });
 
     //close the modal box:
     IEHelperBTN.addEventListener('click', function (e) {
